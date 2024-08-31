@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc&iacute;cio 5 - jQuery:B&aacute;sico</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("ul li").each(function (index) {
+          var numero = index + 1;
+          $(this).prepend(numero + " - ");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Tutoriais</h1>
+    <ul>
+      <li>HTML Tutorial</li>
+      <li>CSS Tutorial</li>
+      <li>JavaScript Tutorial</li>
+    </ul>
+  </body>
+</html>

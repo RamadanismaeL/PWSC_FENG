@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alternar Estilo com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Manipulador de clique para alternar a classe 'highlight'
+        $("#myElement").click(function () {
+          $(this).toggleClass("highlight"); // Alterna a classe CSS
+        });
+      });
+    </script>
+    <style>
+      /* Estilo normal do elemento */
+      #myElement {
+        background-color: lightgray;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer; /* Cursor de mão para indicar que é clicável */
+      }
+      /* Estilo alternativo quando a classe 'highlight' é aplicada */
+      .highlight {
+        background-color: yellow; /* Cor de fundo alterada */
+        color: red; /* Cor do texto alterada */
+        font-weight: bold; /* Texto em negrito */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alternar Estilo com jQuery</h1>
+    <div id="myElement">Clique para alternar estilo</div>
+  </body>
+</html>

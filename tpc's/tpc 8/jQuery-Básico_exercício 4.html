@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc&iacute;cio 4 - jQuery:B&aacute;sico</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#buscar").click(function(){
+              var valorUsuario = $("#valor").val();
+              $("option[value='" + valorUsuario + "']").css("background-color", "yellow");
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <select id="carros">
+      <option value="audi">Carro Audi</option>
+      <option value="bmw">Carro BMW</option>
+      <option value="mercedes">Carro Mercedes</option>
+      <option value="Nissan">Carro Nissan</option>
+      <option value="toyota">Carro Toyota</option>
+      <option value="volvo">Carro Volvo</option>
+      <option value="vw">Carro VW</option>
+    </select>
+    <input type="text" id="valor" placeholder="Valor">
+    <button id="buscar">Buscar</button>
+  </body>
+</html>

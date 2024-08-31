@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Informações com JavaScript</title>
+</head>
+<body>
+    <h1 id="resultado">O resultado aparecerá aqui</h1>
+    <button onclick="mostrarInformacoes()">Clique para ver informações</button>
+
+    <script>
+        function mostrarInformacoes() {
+            // Usar innerHTML para modificar o conteúdo de um elemento
+            //document.write("Olá, Mundo!");
+
+            document.getElementById("resultado").innerHTML = "Olá, Mundo!";
+            
+            // Criar e adicionar um novo elemento ao DOM
+            let novoElemento = document.createElement("p");
+            novoElemento.textContent = "Este é um novo parágrafo adicionado dinamicamente.";
+            document.body.appendChild(novoElemento);
+            
+            // Exibir uma mensagem no console
+            console.log("Mensagem exibida no console.");
+            
+            // Mostrar uma mensagem de alerta
+            alert("Esta é uma mensagem de alerta.");
+            
+            // Usar prompt para obter uma entrada do usuário
+            let nome = prompt("Qual é o seu nome?");
+            if (nome) {
+                // Exibir a entrada do usuário no console
+                console.log("Olá, " + nome + "!");
+                // Adicionar a entrada do usuário ao DOM
+                let nomeElemento = document.createElement("p");
+                nomeElemento.textContent = "Olá, " + nome + "!";
+                document.body.appendChild(nomeElemento);
+            }
+            
+            // Usar confirm para exibir uma caixa de diálogo de confirmação
+            let confirmacao = confirm("Você quer continuar?");
+            if (confirmacao) {
+                console.log("Você clicou em OK.");
+            } else {
+                console.log("Você clicou em Cancelar.");
+            }
+        }
+    </script>
+</body>
+</html>

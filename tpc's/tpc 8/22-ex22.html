@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mostrar Tipo de Elemento com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Evento de clique para mostrar o tipo do elemento
+        $("body").on("click", "*", function (event) {
+          event.stopPropagation(); // Impede propagação para elementos pais
+
+          // Obtém o tipo do elemento clicado
+          var tipo = $(this).prop("tagName").toLowerCase(); // Converte para minúsculas
+
+          alert("Você clicou em um elemento do tipo: " + tipo);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Clique em qualquer lugar para descobrir o tipo do elemento</h1>
+    <a href="#!">Clique neste link</a>
+    <button>Clique neste botão</button>
+    <p>Clique neste parágrafo</p>
+    <div>Clique nesta div</div>
+  </body>
+</html>

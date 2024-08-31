@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8";>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CADASTRO</title>
+        <link rel="stylesheet" href="exercício3.css">
+        <script src="exercício3.js"></script>
+    </head>
+    <body>        
+        <marquee behavior="" direction="right">
+            <h1>&lowast;&nbsp;FORMUL&Aacute;RIO DE CADASTRO&nbsp;&lowast;</h1>
+        </marquee>
+        <hr><br>
+        <form id="formulario">
+            <label for="lblNome" class="nome">Nome:</label>
+            <input type="txt" id="txtNome" class="txtnome" required>
+            <br><br>
+            <label for="lblApelido" id="apelido">Apelido:</label>
+            <input type="txt" id="txtApelido" required>
+            <br><br>
+            <label for="lblSexo" id="sexo">Sexo:</label>
+            <select id="txtSexo" required>
+                <option value="">--</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Feminino</option>
+            </select>
+            <br><br>
+            <label for="lblIdade" id="idade">Idade:</label>
+            <input type="number" id="txtIdade"required>
+            <br><br>
+            <label for="lblEndereco" id="endereco">Endereço:</label>
+            <input type="txt" id="txtEndereco" class="txtendereco" required>
+            <br><br>
+            <label for="lblContacto" id="contacto">Contacto:</label>
+            <input type="txt" id="txtContacto" required>
+            <br><br><br>
+            <button type="button" onclick="enviar()">&check;&nbsp;&nbsp;Enviar</button>
+            <button type="button" onclick="limpar()">&cross;&nbsp;&nbsp;Cancelar</button>
+        </form>
+
+        <br><br>
+        <div id="resultado"></div>
+    </body>
+</html>

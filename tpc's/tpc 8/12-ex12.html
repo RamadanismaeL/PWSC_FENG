@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verificar Classe com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Seleciona todas as divs na página
+        var divs = $("div");
+
+        // Itera sobre cada div para verificar se tem a classe 'slide'
+        divs.each(function (index) {
+          if ($(this).hasClass("slide")) {
+            console.log("A div " + (index + 1) + " possui a classe '.slide'.");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Verificar Classe em Divs</h1>
+    <div>Div sem classe 'slide'</div>
+    <div class="slide">Div com classe 'slide'</div>
+    <div class="another">Div sem classe 'slide'</div>
+  </body>
+</html>

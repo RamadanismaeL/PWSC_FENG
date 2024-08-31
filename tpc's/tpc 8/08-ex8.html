@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Obter CSS com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Define o manipulador de clique para todos os elementos do corpo
+        $("body").on("click", "*", function (event) {
+          event.stopPropagation(); // Evita propagação para elementos pais
+          var cssProps = $(this).css(); // Obter todas as propriedades CSS do elemento clicado
+
+          console.log("Propriedades CSS do elemento clicado:");
+          console.log(cssProps); // Exibe todas as propriedades CSS
+
+          // Se preferir uma saída formatada, faça um loop para exibir as propriedades CSS
+          for (var prop in cssProps) {
+            if (cssProps.hasOwnProperty(prop)) {
+              console.log(prop + ": " + cssProps[prop]);
+            }
+          }
+        });
+      });
+    </script>
+    <style>
+      .example {
+        background-color: lightblue;
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Obtenção de CSS</h1>
+    <p class="example">Este é um parágrafo para clicar.</p>
+    <button class="example">Clique em mim!</button>
+  </body>
+</html>

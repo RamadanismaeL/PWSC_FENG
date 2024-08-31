@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adicionar Elementos com Clique e Duplo-Clique</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Evento de clique simples para adicionar um <h2>
+        $("body").click(function () {
+          var novoH2 = $("<h2></h2>").text("Novo Título (Clique Único)");
+          $("body").append(novoH2); // Adiciona ao final do corpo da página
+        });
+
+        // Evento de duplo-clique para adicionar um parágrafo
+        $("body").dblclick(function () {
+          var novoParagrafo = $("<p></p>").text(
+            "Novo Parágrafo (Duplo-Clique)"
+          );
+          $("body").append(novoParagrafo); // Adiciona ao final do corpo da página
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Exemplo de Clique e Duplo-Clique</h1>
+    <p>
+      Clique para adicionar um <em>h2</em>, ou duplo-clique para adicionar um
+      parágrafo.
+    </p>
+  </body>
+</html>

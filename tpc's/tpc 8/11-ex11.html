@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Imprimir Posicionamento com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Adiciona um evento de clique para todos os elementos
+        $("body").on("click", "*", function (event) {
+          event.stopPropagation(); // Impede a propagação do clique para os elementos pais
+
+          var offset = $(this).offset(); // Posição em relação ao documento
+          var position = $(this).position(); // Posição em relação ao pai
+
+          console.log("Elemento clicado:", this); // Exibe o elemento no console
+          console.log(
+            "Posição (offset) - Top:",
+            offset.top,
+            "Left:",
+            offset.left
+          ); // Posição absoluta
+          console.log(
+            "Posição (position) - Top:",
+            position.top,
+            "Left:",
+            position.left
+          ); // Posição relativa
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Clique em qualquer lugar</h1>
+    <div style="margin-top: 50px; margin-left: 30px">Div 1</div>
+    <div style="margin-top: 100px; margin-left: 60px">Div 2</div>
+    <p style="margin-top: 150px">Parágrafo 1</p>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Campo Somente Leitura com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Evento de clique para tornar o campo somente leitura
+        $("#makeReadOnly").click(function () {
+          $("#myInput").prop("readonly", true); // Define a propriedade `readonly` para `true`
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Campo Somente Leitura com jQuery</h1>
+    <label for="myInput">Nome:</label>
+    <input type="text" id="myInput" name="myInput" value="Texto Editável" />
+    <button id="makeReadOnly">Tornar Somente Leitura</button>
+  </body>
+</html>

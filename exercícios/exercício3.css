@@ -1,0 +1,102 @@
+*{margin:0; padding:0}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 21px;
+    background-color: #013300;
+}
+
+p {
+    font-size: 21px;
+    color: white;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    color: #13ff00;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 45pt;
+    font-family: Unicode;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #13ff00;
+}
+
+form{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+label {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #13ff00;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 10px;
+    border: 4px solid #e0ffe0;
+    box-shadow: 10px;
+}
+
+.nome {
+    margin-right: 41px;
+}
+
+#apelido {
+    margin-right: 22px;
+}
+
+#sexo {
+    margin-right: 56px;
+}
+
+#idade {
+    margin-right: 45px;
+}
+
+#endereco {
+    margin-right: 7px;
+}
+
+#contacto {
+    margin-right: 11px;
+}
+
+.txtnome {
+    width: 350px;
+}
+
+.txtendereco {
+    width: 350px;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    background-color: #c5fffc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #13ff00;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

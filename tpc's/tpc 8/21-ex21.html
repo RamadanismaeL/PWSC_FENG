@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calcular Diferença entre Dois Cliques com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var ultimoClique = null; // Armazena o tempo do último clique
+
+        $("#meuElemento").click(function () {
+          var agora = new Date().getTime(); // Tempo atual em milissegundos
+
+          if (ultimoClique) {
+            // Se já houve um clique anterior
+            var diferenca = agora - ultimoClique; // Calcula a diferença em milissegundos
+            alert("Diferença entre cliques: " + diferenca + " ms"); // Exibe a diferença
+          }
+
+          // Atualiza o tempo do último clique
+          ultimoClique = agora;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Calcular Diferença entre Dois Cliques</h1>
+    <button id="meuElemento">Clique aqui</button>
+  </body>
+</html>

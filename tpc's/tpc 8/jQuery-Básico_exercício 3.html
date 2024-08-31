@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc&iacute;cio 3 - jQuery:B&aacute;sico</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("form input").hide();
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Formul&aacute;rio</h1>
+    <form>
+      <label for="id">ID:</label>
+      <input type="text" name="id" size="20"/>
+      <br>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" name="nome" size="50"/>
+      <br>
+      <label for="teste1">Teste 1:</label>
+      <input type="text" name="contacto" size="3"/>
+      <br>
+      <label for="teste2">Teste 2:</label>
+      <input type="text" name="contacto" size="3"/>
+      <br>
+      <label for="teste3">Teste 3:</label>
+      <input type="text" name="contacto" size="3"/>
+      <br>
+      <label for="media">M&eacute;dia:</label>
+      <input type="text" name="contacto" size="3"/>
+
+      <br><br>
+      <button type="submit">Adicionar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </body>
+</html>

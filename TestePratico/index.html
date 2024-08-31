@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Pesos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="Header">
+        <h1>14 - Conversor de Pesos</h1>
+    </div>
+    <div id="Nav">
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+    <div id="Main">
+        <div id="Article">
+            <div class="converter-form">
+                <form id="weightForm" action="convert.php" method="POST">
+                    <div class="mb-3">
+                        <label for="weight">Peso:</label>
+                        <input type="number" id="weight" name="weight" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="unit">Unidade:</label>
+                        <select id="unit" name="unit" required>
+                            <option value="gramas">Gramas</option>
+                            <option value="quilogramas">Quilogramas</option>
+                            <option value="libras">Libras</option>
+                        </select>
+                    </div>
+                    <button type="submit">Converter</button>
+                </form>
+                <div id="result" class="mt-4"></div>
+            </div>
+        </div>
+        <div id="Ads">
+            <h3>Anúncios</h3>
+            <p>Coloque seus anúncios aqui.</p>
+        </div>
+    </div>
+    <div id="Footer">
+        <p><i>&reg; 8 de Junho de 2024 - Desenvolvido por.: <u>ismaeL, Ramadan Ibraimo.</u></i></p>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Esconder Heading com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Adiciona evento de clique a todos os headings
+        $("h1, h2, h3, h4, h5, h6").click(function () {
+          $(this).hide(); // Esconde o heading clicado
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Heading 1 - Clique para esconder</h1>
+    <h2>Heading 2 - Clique para esconder</h2>
+    <h3>Heading 3 - Clique para esconder</h3>
+    <h4>Heading 4 - Clique para esconder</h4>
+    <h5>Heading 5 - Clique para esconder</h5>
+    <h6>Heading 6 - Clique para esconder</h6>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recuperar Largura e Altura com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Itera sobre todas as divs para obter largura e altura
+        $("div").each(function (index) {
+          var largura = $(this).width(); // Largura do conteúdo
+          var altura = $(this).height(); // Altura do conteúdo
+
+          console.log(
+            "Div " +
+              (index + 1) +
+              " - Largura: " +
+              largura +
+              "px, Altura: " +
+              altura +
+              "px"
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Exemplo de Recuperar Largura e Altura de Divs</h1>
+    <div style="width: 200px; height: 100px; background-color: lightblue">
+      Div 1
+    </div>
+    <div style="width: 150px; height: 150px; background-color: lightgreen">
+      Div 2
+    </div>
+    <div style="width: 300px; height: 200px; background-color: lightcoral">
+      Div 3
+    </div>
+  </body>
+</html>

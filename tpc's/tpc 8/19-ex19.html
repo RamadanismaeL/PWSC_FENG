@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alterar Estilo com Botão e jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Define o evento de clique para o botão
+        $("#toggleStyleButton").click(function () {
+          $("#myDiv").toggleClass("highlight"); // Alterna a classe 'highlight' para a div
+        });
+      });
+    </script>
+    <style>
+      /* Estilo padrão da div */
+      #myDiv {
+        padding: 10px;
+        background-color: lightgray;
+        border: 1px solid #ccc;
+      }
+
+      /* Estilo alternativo para a div */
+      .highlight {
+        background-color: yellow;
+        color: blue;
+        border: 2px dashed #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alterar Estilo de uma Div com Botão</h1>
+    <div id="myDiv">Esta é uma div que pode mudar de estilo.</div>
+    <button id="toggleStyleButton">Alternar Estilo</button>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adicionar CSS Dinamicamente com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Aplica a classe 'myclass' a todos os parágrafos
+        $("p").addClass("myclass");
+      });
+    </script>
+    <style>
+      /* Define a classe CSS 'myclass' com a cor vermelha específica */
+      .myclass {
+        color: #fa5858;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Adição de CSS com jQuery</h1>
+    <p>Este é o primeiro parágrafo.</p>
+    <p>Este é o segundo parágrafo.</p>
+    <p>Este é o terceiro parágrafo.</p>
+  </body>
+</html>

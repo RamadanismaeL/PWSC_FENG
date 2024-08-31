@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alternar Estilo com Duplo-Clique</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Define evento de duplo-clique para alternar a classe 'highlight' no parágrafo
+        $("p").dblclick(function () {
+          $(this).toggleClass("highlight"); // Alterna a classe
+        });
+      });
+    </script>
+    <style>
+      /* Estilo normal do parágrafo */
+      p {
+        background-color: lightgray;
+        padding: 10px;
+      }
+      /* Estilo alternativo quando a classe 'highlight' é aplicada */
+      .highlight {
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Alternar Estilo com Duplo-Clique</h1>
+    <p>Este parágrafo muda de estilo com duplo-clique.</p>
+  </body>
+</html>
