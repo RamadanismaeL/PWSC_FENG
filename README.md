@@ -1,2 +1,2 @@
 # PWSGC_FENG
-Programação Web e Sistemas de Gestão de Conteúdos
+Programação Web e Sistemas de Gerenciamento de Conteúdos
